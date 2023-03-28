@@ -1,0 +1,190 @@
+body {
+  background-color: white;
+}
+.flag_europa {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background-color: blue;
+}
+
+.cerchio {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+    /*non so perchè sono segnati due valori*/
+}
+/* stella viene segnato come primo valore nel div uguale per tutti , deg è il secondo valore relativo a quel div che invece cambia nei 12 e verrà quindi scritto in css singolarmente, indica il grado di traslazione - spostamento della stella */
+.stella {
+   position:absolute;
+   width:15px;
+   height:15px;
+   background:gold;
+  clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+}
+
+.deg-0 {
+   transform:translate(100px)
+}
+
+.deg-30 {
+   transform:rotate(30deg) translate(100px) rotate(-30deg);
+}
+
+.deg-60 {
+   transform:rotate(60deg) translate(100px) rotate(-60deg);
+}
+
+.deg-90 {
+   transform:rotate(90deg) translate(100px) rotate(-91deg);
+}
+
+.deg-120 {
+   transform:rotate(120deg) translate(100px) rotate(-120deg);
+}
+
+.deg-150 {
+   transform:rotate(150deg) translate(100px) rotate(-150deg);
+}
+
+.deg-180 {
+   transform:rotate(180deg) translate(100px) rotate(-180deg);
+}
+
+.deg-210 {
+   transform:rotate(210deg) translate(100px) rotate(-210deg);
+}
+
+.deg-240 {
+   transform:rotate(240deg) translate(100px) rotate(-240deg);
+}
+
+.deg-270 {
+   transform:rotate(270deg) translate(100px) rotate(-270deg);
+}
+
+.deg-300 {
+   transform:rotate(300deg) translate(100px) rotate(-300deg);
+}
+
+.deg-330 {
+   transform:rotate(330deg) translate(100px) rotate(-330deg);
+}
+
+.deg-360 {
+   transform:rotate(360deg) translate(100px) rotate(-360deg);
+}
+/*.flag_europa {
+    position: relative;
+    border: 1px solid black;
+    width: 500px;
+    height: 300px;
+    margin: 10px auto;
+    /* posizioni al centro
+    background-color: blue;
+}
+.cerchio{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    border: 0px solid black;
+    width: 150px;
+    height: 150px;
+/*    top: 50%;
+    margin-top: -100px;
+    margin-left: 150px;    
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+}
+/*.Stella
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+     clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);  
+    transform: translate(150px);
+}
+.Stella1{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+     clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%); 
+   transform: rotate(30deg) translateX(130px) rotate(-30deg);
+}
+.Stella2{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+     clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+   transform: rotate(60deg) translateX(130px) rotate(-60deg);
+}
+.Stella3{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+     clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+transform: rotate(90deg) translateX(130px) rotate(-90deg);
+}
+.Stella4{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+     clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+     transform: rotate(120deg) translateX(130px) rotate(-120deg);
+}
+.Stella5{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+     clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);  
+     transform: rotate(150deg) translateX(130px) rotate(-150deg);
+}
+.Stella6{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+     clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%); 
+     transform: rotate(180deg) translateX(130px) rotate(-180deg);
+}
+.Stella7{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+     clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
+     transform: rotate(210deg) translateX(130px) rotate(-210deg);
+}
+.Stella8{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+     clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);  
+    transform: rotate(240deg) translateX(130px) rotate(-240deg);
+}
+.Stella9{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+     clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%); 
+     transform: rotate(270deg) translateX(130px) rotate(-270deg);
+}
+.Stella10{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+     clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%); 
+     transform: rotate(300deg) translateX(130px) rotate(-300deg);
+}
+.Stella11{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+     clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);  
+     transform: rotate(330deg) translateX(130px) rotate(-330deg);
+}
+.Stella12{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+     clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);  
+     transform: rotate(360deg) translateX(130px) rotate(-360deg);/*

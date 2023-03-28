@@ -1,0 +1,136 @@
+ body {
+  background-color: white;
+}
+.queen_flag {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
+    border: 1px solid pink;
+    width: 515px;
+    height: 305px;
+    margin: 10px auto;
+    background-color: hotpink;
+    position: relative;
+
+}
+.cerchio {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    opacity: 0.4;
+}
+.cerchio1 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: ghostwhite;
+    opacity: 0.4;
+}
+/*.cerchio2 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+}
+.cerchio3 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: ghostwhite;
+}
+.cerchio4 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    }
+.cerchio5 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: ghostwhite;
+}
+.cerchio6 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    }
+.cerchio7 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: ghostwhite;
+}
+.cerchio8 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    }
+.cerchio9 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: ghostwhite;
+}
+.cerchio10 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    }
+.cerchio11 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: ghostwhite;
+}
+.cerchio12 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    }
+.cerchio13 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: ghostwhite;
+}
+.cerchio14 {
+    border-radius: 50%;
+    border: 1px solid pink;
+    width: 100px;
+    height: 100px;
+    background-color: lightpink;
+    }*/
+/*.corona.png {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    z-index: 1;
+}*/
+.image {
+    z-index: 1;
+    display: block;
+    position:absolute;
+    top: 50px;
+    left: 150px;
+    
+}
