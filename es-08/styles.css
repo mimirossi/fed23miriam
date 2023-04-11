@@ -1,0 +1,61 @@
+body {
+  background-color: white;
+}
+img {
+  position: absolute;
+  top:16%;
+  left: 40%;
+  width: 20%;
+  z-index: 1;
+ }
+.queen_flag {
+    display: flex;
+    border: 1px solid pink;
+  border-radius: 13%;
+    width: 50%;
+    margin: 10px auto;
+    background-color: hotpink;
+    flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-evenly;
+  aspect-ratio: 5/3;
+}
+.cerchio {
+  aspect-ratio:1/1;
+    border-radius: 50%;
+    width: 20%;
+}
+.colore1 {
+  background-color: lightpink;
+    opacity: 0.4;
+}
+.colore2 {
+    background-color: ghostwhite;
+    opacity: 0.4;
+  }
+@media (any-hover: hover) {
+  .cerchio:hover {
+    background: yellow;
+    opacity: 0.4;
+  width: 30%;
+      }
+    img:hover {
+    transition-duration: 0.8s;
+    transition-property: transform background;
+    transform: rotate(30deg);
+  }
+  @media screen and (max-width: 900px) {
+  img {
+     top:8%;
+  left: 40%;
+  }
+  img:hover {
+    transition-duration: 0.8s;
+    transition-property: transform background;
+    transform: rotate(360deg);
+  }
+  .queen_flag {
+    background-color: paleturquoise;
+    border: 0px;
+  }
+}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
+
+body {
+  background-color: lavender;
+  font-family: 'Rubik Pixels', cursive;
+
+  /*border: solid black;
+  margin: 50px 80px 25px 50px;*/
+}
+
+.base {
+  position: relative;
+  width: 400px;
+  height: 25px;
+  background-color: black;
+}
+
+.base1 {
+  width: 30px;
+  height: 40px;
+  background-color: black;
+}
+.destra {
+  position:absolute;
+  left: 100px;
+  transform: rotate(90deg);
+}
+h1 {
+  margin: 15px;
+}
+p {
+ margin: 15px; 
+}
