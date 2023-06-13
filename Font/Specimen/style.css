@@ -1,0 +1,290 @@
+body{
+  background-color: white;
+}
+* {
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+  font-family: 'helvetica-bold';
+  src: url(/Users/macbookpro/Documents/Miriam15/Font/Helvetica-Font/Helvetica-Bold.ttf);
+  
+}
+@font-face {
+  font-family: 'helvetica';
+  src: url(/Users/macbookpro/Documents/Miriam15/Font/Helvetica-Font/Helvetica.ttf);
+}
+@font-face {
+  font-family: 'Viki';
+  src: url(/Users/macbookpro/Documents/Miriam15/Font/Viki-Regular-4.otf);
+}
+
+body{
+  background-color: white;
+  margin: 0;
+}
+
+.linee-orizzontali div {
+  border-bottom: 1px solid silver;
+  height: calc(150px/2);  
+}
+.linee-orizzontali div:nth-child(even) {
+  height: calc(221px/2);
+}
+.linee-verticali {
+  display: flex;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+.linee-verticali div {
+  border-right: 1px solid silver;
+  width: 50px;
+  height: 100vh;
+}
+.linee-verticali div.box1 {
+  width: calc(222px/2);  
+}
+.linee-verticali div.box2 {
+  /*width: 15.5vw;*/
+  width: calc(297px/2);  
+}
+.moduli {
+  /*top: calc(150px/2);
+  left: calc(2000px/2);*/
+  background-color: orange;
+  width: calc(519px/2);
+  height: calc(220px/2)
+}
+.modulidue {
+  background-color: mediumpurple;
+  height: calc(222px/2);
+  width: calc(297px/2)
+}
+.due {
+  position: absolute;
+  top: 20%;
+  left: 78%;
+  /*top: calc(150px/2);
+  left: calc(2000px/2);*/
+}
+
+
+.tre {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  transform: rotate(90deg);
+  /*top: calc(150px/2);
+  left: calc(2000px/2);*/
+}
+
+.quattro {
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  /*top: calc(150px/2);
+  left: calc(2000px/2);*/
+}
+
+.cinque {
+  position: absolute;
+  top: 171%;
+  left: 0%;
+}
+.sei {
+  position: absolute;
+  top: 70%;
+  left: 90%;
+}
+.sette {
+  position: absolute;
+  top: 90%;
+  left: 0%;
+}
+
+.logo {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+.header {
+  width: 1440px;
+  height:77px;
+  border: none;
+  position: fixed;
+  z-index: 1;
+  top: 25px;
+  left: 395px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 47px;
+  background-color: whitesmoke;
+}
+.btn {
+  font-family: 'helvetica-bold';  
+  font-size: 1em;
+  border: none;
+  background-color: inherit;
+  color: #000000;
+  padding: 10px 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+.work {
+/*position: absolute;
+left: 500px;
+top: 20px;*/
+}
+.concept {
+box-sizing: border-box;
+/*position: absolute;
+left: 610px;
+top: 20px;*/
+}
+.alphabet {
+/*position: absolute;
+left: 760px;
+top: 20px;*/}
+.visual {
+/*position: absolute;
+left: 880px;
+top: 20px;*/
+}
+
+.btn:hover {
+border-radius: 10%;
+border: 1px solid black;
+color: orange;
+}
+
+ .testo {
+  font-family: 'Viki';
+  font-size: 5em;
+}
+/*.uno{
+  position: absolute;
+  top: calc(150px/2);
+  left: calc(1260px/2);
+}*/
+.oggetti {
+  display: flex;
+  column-gap: 300px;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 200px;
+  left: 13px;
+}
+.movete {
+  font-family: 'Viki';
+  font-size: 20em;
+  cursor: pointer;
+position: relative;
+} 
+
+.testo {
+    display: flex;
+    position: absolute;
+  top: 550px;
+  left: 630px;
+  /*width: 768px;*/
+  width: 500px;
+  height: 72px;
+  font-family: 'helvetica'; 
+  font-size: 1em;
+  color: darkgray;
+  text-align: justify;
+
+}
+.table { 
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  font-family: 'Viki';
+  font-size: 4em;
+  max-width: 800px;
+  position: absolute;
+  /*top: 742px;*/
+  top: 927px;
+  left: 258px;
+}
+.cella {
+  border: 1px solid orange;
+  box-sizing: border-box;
+  flex: 0 0 16%;
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: whitesmoke;
+
+  /*margin-right: calc(100% - (16% + 6)/ 4);
+  margin-bottom: calc(100% - (16%+6)/ 4);*/ 
+}
+.cellap {
+  border: 1px solid orange;
+  background-color: whitesmoke;
+  padding: 40px;
+  font-family: 'Viki';
+  font-size: 5em;
+  box-sizing: border-box;
+  display: none;
+  background-color: red;
+  position: relative;
+  left: -100px;
+    pointer-events: none;
+  
+}
+
+.cella-a:hover + .cellap {
+  display: block; /*non funziona*/
+}
+/*.cella: hover + .cellap {
+  border: 1px solid mediumpurple;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  font-size: 3em;
+} /*non funziona*/
+
+.table2 {
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  font-family: 'Viki';
+  font-size: 4em;
+  max-width: 800px;
+  position: absolute;
+  /*top: 742px;*/
+  top: 1482px;
+  left: 519px;;
+}
+.cella2 {
+  border: 1px solid mediumpurple;
+  box-sizing: border-box;
+  flex: 0 0 16%;
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+.photo1 {
+  position: absolute;
+  top: 2000px;
+  left: 295px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 480px) {
+  .testo {
+    position: absolute;
+  top: 550px;
+  left: 630px;
+  width: 8px;
+  height: 72px;
+    font-family: 'helvetica'; 
+    font-size: 1em;
+  color: darkgray;
+  text-align: justify;
+
+  }
+}

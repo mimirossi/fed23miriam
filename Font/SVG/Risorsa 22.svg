@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 20.89">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <polyline class="cls-1" points="10.99 20.89 10.99 12.99 10.99 8.98 10.99 4.97 15 4.97 15 0 0 0 0 4.97 4.01 4.97 4.01 8.98 4.01 12.99 4.01 20.89"/>
+  </g>
+</svg>

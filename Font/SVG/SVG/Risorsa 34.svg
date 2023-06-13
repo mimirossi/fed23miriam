@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Livello_2" data-name="Livello 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <g id="Layer_3" data-name="Layer 3">
+    <path class="cls-1" d="m15,15v-1.07s-7.94,0-7.94,0v-4.01h7.94s0-9.92,0-9.92H0s0,15,0,15h15ZM6.98,1.26h5.97v5.97h-5.97V1.26Z"/>
+  </g>
+</svg>
