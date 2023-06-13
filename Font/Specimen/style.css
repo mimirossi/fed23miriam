@@ -16,7 +16,7 @@ body{
 }
 @font-face {
   font-family: 'Viki';
-  src: url(/Users/macbookpro/Documents/Miriam15/Font/Viki-Regular-4.otf);
+  src: url(/Users/macbookpro/Documents/Miriam15/NABA/Front-end/fed23miriam/Font/Specimen/Viki-Regular-4.otf);
 }
 
 body{
@@ -270,8 +270,8 @@ position: relative;
 
 .photo1 {
   position: absolute;
-  top: 2000px;
-  left: 295px;
+  top: 2100px;
+  left: 260px;
   box-sizing: border-box;
 }
 @media screen and (max-width: 480px) {
