@@ -1,11 +1,28 @@
 body {
   background-color: white;
 }
+.line {
+  border: 1px solid black ;
+  width: auto;
+}
+@keyframes example { /*animazione per transizione img*/
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+@keyframes example2 { 
+  0% {transform: rotate(0deg);}
+  100% {transform: rotateZ(360deg);}
+}
 img {
   position: absolute;
   top:16%;
   left: 40%;
   width: 20%;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
   z-index: 1;
  }
 .queen_flag {
@@ -33,29 +50,51 @@ img {
     background-color: ghostwhite;
     opacity: 0.4;
   }
+
 @media (any-hover: hover) {
   .cerchio:hover {
     background: yellow;
     opacity: 0.4;
-  width: 30%;
+    width: 30%;
       }
     img:hover {
     transition-duration: 0.8s;
     transition-property: transform background;
     transform: rotate(30deg);
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 768px) {
   img {
-     top:8%;
+     top:15%;
   left: 40%;
   }
-  img:hover {
+    img {
+ animation-name:example;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+ animation-direction: normal;
+  }
+  /*img {
     transition-duration: 0.8s;
     transition-property: transform background;
     transform: rotate(360deg);
-  }
+  }*/
   .queen_flag {
-    background-color: paleturquoise;
+    background-color: antiquewhite;
     border: 0px;
   }
+   }
+  /*@media screen and (max-width ) and (max-width );
+   @media screen and (min-width: 900px) {
+  .cerchio{
+    flex-basis: 10%;
+    flex-grow: 3 ;
 }
+  }*/
+    .prova_mouse {
+      border: 1px solid black;
+      width: 50px;
+      height: 20px;
+      background-color: aqua;
+       position:relative;
+  cursor:pointer;
+    }
