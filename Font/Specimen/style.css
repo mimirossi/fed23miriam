@@ -18,6 +18,7 @@ body{
   font-family: 'Viki';
   src: url(/Users/macbookpro/Documents/Miriam15/NABA/Front-end/fed23miriam/Font/Specimen/Viki-Regular-4.otf);
 }
+ 
 
 body{
   background-color: white;
@@ -105,8 +106,10 @@ body{
 
 .logo {
   position: fixed;
-  top: 10px;
+  top: 5px;
   left: 10px;
+  width: 90px;
+  height: 80px;
 }
 .header {
   width: 1440px;
@@ -115,30 +118,52 @@ body{
   position: fixed;
   z-index: 1;
   top: 25px;
-  left: 395px;
+  /*left: 395px;*/
+  left: 433px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   column-gap: 47px;
   background-color: whitesmoke;
+  padding: 4px;
 }
+
 .btn {
   font-family: 'helvetica-bold';  
   font-size: 1em;
+  text-align: center;
   border: none;
   background-color: inherit;
   color: #000000;
   padding: 10px 10px;
   cursor: pointer;
   display: inline-block;
+  
 }
-.work {
-/*position: absolute;
-left: 500px;
-top: 20px;*/
+
+/*
+.btn2 {
+  font-family: 'helvetica-bold';  
+  font-size: 1em;
+  text-align: center;
+  border: none;
+  background-color: inherit;
+  color: #000000;
+  padding: 10px 10px;
+  cursor: pointer;
+  display: inline-block;
+  
 }
-.concept {
+*/
+
+/*
+a[ id= "descLink"]:target ~ #btn1 section.btn1 {}
+a[ id= "descLink1"]:target ~ #btn2 section.btn2 {}
+*/
+/*
+#concept {
 box-sizing: border-box;
+*/
 /*position: absolute;
 left: 610px;
 top: 20px;*/
@@ -159,6 +184,13 @@ border: 1px solid black;
 color: orange;
 }
 
+/*
+.btn2:hover {
+border-radius: 10%;
+border: 1px solid black;
+color: orange;
+}
+*/
  .testo {
   font-family: 'Viki';
   font-size: 5em;
@@ -169,9 +201,11 @@ color: orange;
   left: calc(1260px/2);
 }*/
 .oggetti {
+/*
   display: flex;
   column-gap: 300px;
   flex-wrap: wrap;
+*/
   position: absolute;
   top: 200px;
   left: 13px;
@@ -180,8 +214,52 @@ color: orange;
   font-family: 'Viki';
   font-size: 20em;
   cursor: pointer;
-position: relative;
+position: absolute;
+  top: 0;
 } 
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+.hvr-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  
+}
+.hvr-pulse:hover, .hvr-pulse:focus, .hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  color: mediumpurple;
+}
+.oggetti #oggettoMobile1 {}
+.oggetti #oggettoMobile2 {left: 440px;}
+.oggetti #oggettoMobile3 {left: 840px;}
+.oggetti #oggettoMobile4 {left: 1240px;}
 
 .testo {
     display: flex;
@@ -195,8 +273,9 @@ position: relative;
   font-size: 1em;
   color: darkgray;
   text-align: justify;
-
 }
+
+
 .table { 
   display: flex;
   flex-wrap: wrap;
@@ -216,28 +295,49 @@ position: relative;
   padding: 10px 10px;
   text-align: center;
   cursor: pointer;
-  background-color: whitesmoke;
+   background-color: whitesmoke;
 
   /*margin-right: calc(100% - (16% + 6)/ 4);
   margin-bottom: calc(100% - (16%+6)/ 4);*/ 
 }
-.cellap {
+
+.cella-a {
   border: 1px solid orange;
-  background-color: whitesmoke;
-  padding: 40px;
+  box-sizing: border-box; 
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer;
+   background: whitesmoke;
+}
+/*.cellap {
+  border: 1px solid mediumpurple;
+  padding: 20px;
   font-family: 'Viki';
   font-size: 5em;
   box-sizing: border-box;
   display: none;
-  background-color: red;
+  background-color: whitesmoke;
   position: relative;
-  left: -100px;
+  left: -50px;
     pointer-events: none;
-  
+}*/
+
+.cella-a:hover  {
+  display: block; 
+  background-position: 50% ;
+  font-size: 5em;
+  font-family: 'Viki';
 }
 
-.cella-a:hover + .cellap {
-  display: block; /*non funziona*/
+@keyframes up-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 1.5em; }
+  100% { padding-top: 2em; }
+}
+@keyframes down-bump {
+  0% { padding-top: 2em; }
+  50% { padding-top: 2.5em; }
+  100% { padding-top: 2em; }
 }
 /*.cella: hover + .cellap {
   border: 1px solid mediumpurple;
@@ -268,12 +368,110 @@ position: relative;
   background-color: whitesmoke;
 }
 
-.photo1 {
+/*
+.carosello {
   position: absolute;
-  top: 2100px;
+  top: 2040px;
   left: 260px;
   box-sizing: border-box;
+  border: 5px solid orange;
+  overflow-x: scroll;
+
 }
+*/
+
+
+.slider-container {
+    width: 770px;
+    height: 500px;
+    background-color: whitesmoke;
+   position: absolute;
+  top: 2000px;
+  left: 300px;
+/*    text-align: center;*/
+    overflow: hidden;
+  box-sizing: border-box;
+  border: 3px solid orange;
+}
+
+.image-container {
+/*
+    width: 770px;
+    height: 500px;
+*/
+    width: 2400px;
+    height: 500px;
+/*    clear: both;*/
+    position: relative;
+   
+    -webkit-transition: left 2s;
+    -moz-transition: left 2s;
+    -o-transition: left 2s;
+    transition: left 2s;
+}
+
+#slider-image-1:target~.image-container
+{
+   left: 0px;
+  display: block;
+}
+#slider-image-2:target~.image-container
+{
+   left: -780px;
+  display: block;
+}
+#slider-image-3:target~.image-container
+{
+   left: -1540px;
+  display: block;
+}
+.button-container
+{
+	position: relative;
+	top: -40px;
+  left: 50%
+}
+.slider-change{
+	display: inline-block;
+	height: 10px;
+	width: 10px;
+	border-radius: 5px;
+	background-color: orange;
+}
+.slider-image1{
+  width: 770px;
+  height: 500px;
+}
+.slider-image2{
+  width: 770px;
+  height: 500px;
+}
+.slider-image3{
+  width: 770px;
+  height: 500px;
+}
+
+/*
+.photo1 {
+  position: absolute;
+  top: 2040px;
+  left: 260px;
+  box-sizing: border-box;
+  border: 5px solid orange;
+
+}
+
+.photo2 {
+  position: absolute;
+  top: 2040px;
+  left: 260px;
+  box-sizing: border-box;
+  border: 5px solid orange;
+}
+*/
+
+
+/*
 @media screen and (max-width: 480px) {
   .testo {
     position: absolute;
@@ -287,4 +485,4 @@ position: relative;
   text-align: justify;
 
   }
-}
+}*/
