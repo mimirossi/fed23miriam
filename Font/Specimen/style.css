@@ -309,6 +309,15 @@ position: absolute;
   cursor: pointer;
    background: whitesmoke;
 }
+
+.cella2-A {
+  border: 1px solid mediumpurple;
+  box-sizing: border-box; 
+  padding: 10px 10px;
+  text-align: center;
+  cursor: pointer;
+   background: whitesmoke;
+}
 /*.cellap {
   border: 1px solid mediumpurple;
   padding: 20px;
@@ -323,6 +332,13 @@ position: absolute;
 }*/
 
 .cella-a:hover  {
+  display: block; 
+  background-position: 50% ;
+  font-size: 5em;
+  font-family: 'Viki';
+}
+
+.cella2-A:hover  {
   display: block; 
   background-position: 50% ;
   font-size: 5em;
@@ -386,7 +402,7 @@ position: absolute;
     height: 500px;
     background-color: whitesmoke;
    position: absolute;
-  top: 2000px;
+  top: 2100px;
   left: 300px;
 /*    text-align: center;*/
     overflow: hidden;
